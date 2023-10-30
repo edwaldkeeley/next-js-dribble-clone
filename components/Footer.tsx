@@ -45,6 +45,11 @@ const Footer = () => {
           <FooterColumn title={footerLinks[6].title} links={footerLinks[6].links} />
         </div>
       </div>
+
+      <div className='flexBetween footer_copyright'>
+        <p>@ 2023 Flexibble. All right reserved</p>
+        <p className=''></p>
+      </div>
     </footer>
   )
 }
