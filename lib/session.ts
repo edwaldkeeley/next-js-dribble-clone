@@ -9,15 +9,18 @@ export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
       clientId: '',
-      clientSecret: ''
-    })
+      clientSecret: '',
+    }),
   ],
   jwt: {
-    encode: () => {
-
-    },
-    decode: () => {
-
-    },
+    encode: ({ secret, token }) => {},
+    decode: async ({ secret, token }) => {},
+  },
+  theme: {
+    colorScheme: 'light',
+    logo: '/logo.png',
+  },
+  callbacks: {
+    async session({})
   }
 }
